@@ -13,7 +13,7 @@ jobs:
         os: [ linux ]
         include:
           - clang-version: 13
-            release: llvm-project-13.0.0rc2.src
+            release: llvm-project-13.0.0rc2
           - os: linux
             runner: ubuntu-20.04
             os-cmake-args: '-DLLVM_BUILD_STATIC=ON -DCMAKE_CXX_FLAGS="-s -flto" ${POSIX_CMAKE_ARGS}'
